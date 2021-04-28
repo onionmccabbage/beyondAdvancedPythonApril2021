@@ -1,0 +1,16 @@
+<script src="http://cdnjs.cloudflare.com/ajax/libs/openlayers/2.11/OpenLayers.js"></script>
+<div id="basicMap"></div>
+<script>
+    let lon = '{{lon}}' // e.g. 7.900
+    let lat = '{{lat}}' // e.g. 53.429
+
+    const map = new OpenLayers.Map("basicMap");
+    let mapnik         = new OpenLayers.Layer.OSM();
+    let fromProjection = new OpenLayers.Projection("EPSG:4326");   // Transform from WGS 1984
+    let toProjection   = new OpenLayers.Projection("EPSG:900913"); // to Spherical Mercator Projection
+    let position       = new OpenLayers.LonLat(lon,lat).transform( fromProjection, toProjection);
+    let zoom           = 18; 
+
+    map.addLayer(mapnik);
+    map.setCenter(position, zoom );
+</script>
