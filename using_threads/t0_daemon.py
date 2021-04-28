@@ -12,8 +12,8 @@ def daemonThread():
         time.sleep(2)
 
 if __name__ == '__main__':
-    s = threading.Thread(target=standardThread)
-    d = threading.Thread(target=daemonThread())
+    s = threading.Thread(target=standardThread )
+    d = threading.Thread(target=daemonThread )
     # set d to act as a daemon thread
     d.setDaemon(True)
     d.start()
