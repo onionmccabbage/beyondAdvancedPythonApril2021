@@ -1,0 +1,61 @@
+Python - Beyond Advanced
+========================
+Toby Dussek April 2021
+
+Monday
+- welcome
+> design patterns
+  see https://www.geeksforgeeks.org/python-design-patterns/
+  and https://python-patterns.guide/
+- try code in py2 and py3 (may need to import stuff)
+- we will be installing additional packages as needed
+> review exercise
+> show an eg of the proxy pattern
+> RxPY see https://rxpy.readthedocs.io/en/latest/
+
+All my files are here:
+  https://github.com/onionmccabbage/beyondAdvancedPythonApril2021
+
+Tuesday
+> performance
+> examples of concurrency and parallel code
+> thread join and thread locks/rlocks
+> review exercise
+> @ decorator to make classes and methods thread safe (using Lock)
+
+Wednesday
+> profiling
+> multiprocessing
+  to generate a data file of memory profile: mprof run profileTest.py
+> testing: doctest, unittest, pytest
+  pytest https://docs.pytest.org/en/latest/
+- Behaviour-driven development BDD
+> microservices
+> Flask
+  https://flask-restful.readthedocs.io/en/latest/quickstart.html#full-example
+> how to configure the IP address of the Flask server
+> review exercise: especially opportunities for testing
+> Django
+  free book on recent Django: https://www.tangowithdjango.com/book17/
+> brief overview of Anaconda (in preparation for Thurs/Friday)
+
+Thursday
+> Python for Data Analysis
+  data sources (csv, xlsx, text, db, url...)
+> using Jupyter notebooks
+  markdown: https://ingeh.medium.com/markdown-for-jupyter-notebooks-cheatsheet-386c05aeebed
+> numpy and data structures: the array (mutable efficient indexed colletion of same data-type)
+- pandas
+> review exercise
+- data vizualisation
+
+Friday
+- an example contour plot
+- logging see https://pastebin.com/84KyVW2i
+- overview of tools and techniques
+- some classic data sets
+- underfitting and overfitting
+- Jupyter Notebooks: ctrl-shift-minus will split a cell
+  see https://www.cheatography.com/weidadeyue/cheat-sheets/jupyter-notebook/
+- end of course: make my examples available
+- end of course feedback

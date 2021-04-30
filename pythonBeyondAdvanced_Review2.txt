@@ -1,5 +1,6 @@
-Python Beyond Advanced Review Exercise 2
-======================================== (You may need to sign up for free for an API key)
+Python Beyond Advanced Review Exercise 2  see https://github.com/onionmccabbage/beyondAdvancedPythonApril2021/blob/main/pythonBeyondAdvanced_Review2.txt
+======================================== until about 3:00 ish
+(You may need to sign up for free for an API key)
 For this project, use modules and imports to separate your code structures
 In a new Python module, declare a 'WeatherGetter' class which inherits from the Thread class.
 Initialize it to take a 'city' parameter. Declare a 'run' method for this class.
