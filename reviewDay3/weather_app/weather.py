@@ -3,7 +3,6 @@ import json
 from urllib.request import urlopen
 import time
 
-@profile
 class TempGetter(Thread):
     def __init__(self, city):
         """

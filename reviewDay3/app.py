@@ -33,7 +33,6 @@ def getWeather():
 
 # use the weather module
 @app.route('/weather/<c1>')
-@profile
 def getOneParamWeather(c1=False):
     # call weather module
     cities = [c1]
