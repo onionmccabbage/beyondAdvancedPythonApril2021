@@ -38,8 +38,10 @@ class TempGetter(Thread):
             'lon':self.lon})
         self.__count += 1
         # fetch a map
-        r = requests.get('https://www.google.co.uk/maps/place/{},{}'.format(self.lon, self.lat))
-        fout = open('map.html', 'wt')
+        url = 'https://www.google.co.uk/maps/place/{},{}'.format(self.lat, self.lon)
+        print(url)
+        r = requests.get(url)
+        fout = open('map.html', 'wt', encoding="utf-8")
         try:
             print(r.text, file=fout)
         except Exception as e:
